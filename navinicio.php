@@ -184,10 +184,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     </div>
 
                     <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Contraseña</label>
-                        <input type="password" class="form-control" id="contrasena" name="contrasena" placeholder="Ingrese sus Contraseña" required>
+                        <label for="password" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="password" name="contrasena" placeholder="Ingrese sus Contraseña" required>
                     </div>
-
+                    <div class="mb-4 form-check">
+                        <input type="checkbox" name="connected" class="form-check-input" onclick="verpassword()">
+                        <label for="conneted" class="form-check-label">Mostrar Contraseña</label>
+                    </div>
                     <center><button type="submit" class="btn btn-primary">Aceptar</button></center>
                 </form>
             </div>
@@ -197,3 +200,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         </div>
     </div>
 </div>
+
+<script>
+  function verpassword() {
+    var tipo = document.getElementById("password");
+    if (tipo.type == "password") {
+      tipo.type = "text";
+    }
+    else {
+      tipo.type = "password";
+    }
+  }
+</script>

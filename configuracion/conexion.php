@@ -1,7 +1,7 @@
 <?php
 class Conexion 
 {
-  private static $dbName = 'Sobek' ; 
+  private static $dbName = 'Sobe1' ; 
   private static $dbHost = 'localhost'; // host lo mismo para ambos mysql y postgret
   private static $dbUsername = 'root'; // postgret: PostgreSQl 9.3 y myslq: root
   private static $dbUserPassword = ''; //POSTGRET : p05gr3t y mysql : ''
