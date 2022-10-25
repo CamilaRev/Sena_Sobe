@@ -107,7 +107,7 @@
                                 </div>
                                 <div class="mb-3">
                                     <label for="exampleInputEmail1" class="form-label">Fecha de nacimiento</label>
-                                    <input type="date" class="form-control" id="fecha" name="fecha" value="<?php echo!empty($dato['u_fecha_nacimiento']) ? $dato['u_fecha_nacimiento'] : ''; ?>" disabled>
+                                    <input type="date" class="form-control" id="fecha"  name="fecha" value="<?php echo!empty($dato['u_fecha_nacimiento']) ? $dato['u_fecha_nacimiento'] : ''; ?>" disabled>
                                 </div>
 
                                 

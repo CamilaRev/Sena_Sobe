@@ -134,8 +134,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                 <input type="text" class="form-control" id="direccion" name="direccion" placeholder="Ingrese su Direccion" required>
                             </div>
                             <div class="mb-3">
-                                
-                                <input type="date" class="form-control" id="fecha" name="fecha" placeholder="Ingrese su Fecha de nacimiento" required>
+                            <label for="fecha" class="form-label">Fecha de Nacimiento</label>
+                                <input type="date" class="form-control" min="1985-01-01" max="2004-01-01"  id="fecha" name="fecha" placeholder="Ingrese su Fecha de nacimiento" required>
                             </div>
 
                             <div class="mb-3">

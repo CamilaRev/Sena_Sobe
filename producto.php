@@ -119,7 +119,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                             <input type="file" class="form-control" id="imagen" name="imagen" placeholder="stock del producto" required>
                                         </div>
                                         <div class="mb-3">
-                                            <input type="date" class="form-control" id="fecha" name="fecha" placeholder="Fecha de Vencimiento" required>
+                                            <input type="date" class="form-control" id="fecha" name="fecha" min="2022-10-01" max="2024-01-01"  placeholder="Fecha de Vencimiento" required>
                                         </div>
                                     </div>
                                 </div>
@@ -230,7 +230,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                                         </div>
                                                         <div class="mb-3">
                                                             <label for="exampleInputEmail1" class="form-label">Fecha de vencimiento</label>
-                                                            <input type="date" class="form-control" id="fecha" name="fecha" placeholder="Fecha de Vencimiento"  min="2018-01-01" max="2026-05-01" value="<?php echo!empty($dato['p_fecha_vencimiento']) ? $dato['p_fecha_vencimiento'] : ''; ?>" required>
+                                                            <input type="date" class="form-control" id="fecha" name="fecha" placeholder="Fecha de Vencimiento"  value="<?php echo!empty($dato['p_fecha_vencimiento']) ? $dato['p_fecha_vencimiento'] : ''; ?>" required>
                                                         </div>
 
                                                     </div>
