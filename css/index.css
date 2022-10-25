@@ -1,0 +1,354 @@
+.text-belleza {
+    color: #2355AF !important;
+}
+
+.btn-belleza {
+    background-color: #fbfcff;
+    color: rgb(50, 170, 222);
+}
+
+.btn-belleza:hover {
+    background-color: rgb(4, 120, 170);
+}
+
+.navbar-brand img {
+    width: 80px;
+}
+
+.nav-item img {
+    width: 30px;
+}
+
+#main .carousel-inner img {
+    max-height: 85vh;
+    object-fit: cover;
+    filter: grayscale(40%);
+}
+
+#carousel {
+    position: relative;
+}
+
+#carousel .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(123, 161, 188, 0.5);
+    color: #172e38;
+}
+
+#carousel .overlay .container,
+#carousel .overlay .row {
+    height: 100%;
+}
+
+#place-time {
+    background-color: #92d0ed;
+    color: white;
+}
+
+#place-time img {
+    max-width: 100%;
+}
+
+#emailHelp {
+    color: rgb(160, 160, 161);
+}
+
+#footer {
+    background: linear-gradient(90deg, #92d0ed, #51abd1 25%, #E26C4E);
+    padding-top: 40px;
+    margin-top: 50px;
+}
+
+#footer a {
+    color: #e9e7ea;
+}
+
+body,
+html,
+span,
+h1,
+h2,
+h3,
+h4,
+a {
+    font-family: "Calibri";
+    color: #1E1F1D;
+    -webkit-font-smoothing: antialiased;
+}
+
+.card1 {
+    font-size: 70%;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: rgb(255, 253, 253);
+    background-clip: border-box;
+    border: 1px solid rgba(247, 244, 244, 0.125);
+    border-radius: 0.25rem;
+}
+
+.btn {
+    background-color: #86a09e;
+    color: rgb(253, 253, 253);
+    font-size: 80%;
+}
+
+.form-formulario {
+    background: url(imag/ingresusu.jpg)
+}
+
+.form-register {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.form-register h4 {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 20px;
+
+}
+
+.controls {
+    width: 500px;
+    background: #ECF0F1;
+    padding: 5px;
+    margin-bottom: 15px;
+    border: 5px;
+    
+    border: radius 20px;
+    font-family: 'calibri';
+    font: size 18px;
+
+}
+
+.form-register p {
+    text-align: center;
+    font-size: 20px;
+    line-height: 50px;
+}
+
+.form-register a {
+    color: #182220;
+    text-decoration:"none";
+    
+}
+
+.form-register .botons {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.botonsfform-registr02 {
+    width: 30%;
+    align-content: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-registr01 {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url(imag/ima3.jpg)
+}
+
+.controls1 {
+    max-width: 500px;
+    padding: 4px;
+    margin-bottom: 15px;
+    font: size 18px;
+    background: #f8faf9;
+    font-family: 'calibri';
+    text-align: center;
+}
+
+.form-registr01 {
+    background: #62c3f0
+}
+
+.form-empleado {
+    background: url(imag/img005.jpg)
+}
+
+.form-registr02 {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.p-Questions {
+    text-align: center;
+    font-size: 20px;
+    line-height: 50px;
+}
+
+.p-Aboutus {
+    text-align: center;
+    font-size: 20px;
+    line-height: 50px;
+    background: #6ac2af
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    background-image: url("https://img.freepik.com/vector-gratis/fondo-acuarela-flores-dibujadas-espacio-vacio_52683-61606.jpg?w=2000");
+
+}
+
+.container__card {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+    perspective: 1000px;
+    display: flex;
+
+    flex-wrap: wrap;
+    color: #2355AF;
+}
+
+.card__father {
+    margin: 20px;
+
+}
+
+.card__father:hover .card1 {
+    transform: rotateY(180deg);
+
+}
+
+
+.card1 {
+    width: 350px;
+    height: 400px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 600ms;
+
+}
+
+
+.card__front {
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+.card__front,
+.card__back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    border-radius: 20px;
+
+}
+
+.card__back {
+    transform: rotateY(180deg);
+    background: #BBFCF3;
+
+}
+
+.body__card_front {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    transform: translateZ(60px);
+
+}
+
+.bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(245, 188, 188, 0.4);
+    border-radius: 20px;
+
+}
+
+.body__card_back {
+    padding: 40px;
+    text-align: center;
+    transform: translateZ(60px);
+
+}
+
+.body__card_back p {
+    margin-top: 30px;
+    font-size: 18px;
+
+}
+
+.body__card_back input {
+    padding: 10px 40px;
+    margin-top: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    background: #58B0F6;
+    box-shadow: 1px 1px 30px -5px #58B0F6;
+    border-radius: 10px;
+    transition: box-shadow 600ms;
+}
+
+.body__card_back input:hover {
+    box-shadow: 1px 1px 30px 0px #449de6;
+}
