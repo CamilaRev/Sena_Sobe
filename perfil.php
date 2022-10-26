@@ -107,7 +107,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                 </div>
                                 <div class="mb-3">
                                     
-                                    <input type="date" class="form-control" id="fecha" name="fecha"  value="<?php echo!empty($fechanacimientoadmin) ? $fechanacimientoadmin : ''; ?>" placeholder="Ingrese su Fecha de nacimiento" required>
+                                    <input type="date" class="form-control" min="1985-01-01" max="2004-01-01" id="fecha" name="fecha"  value="<?php echo!empty($fechanacimientoadmin) ? $fechanacimientoadmin : ''; ?>" placeholder="Ingrese su Fecha de nacimiento" required>
                                 </div>
 
                                 <div class="mb-3">

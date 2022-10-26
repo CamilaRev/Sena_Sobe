@@ -106,8 +106,8 @@
                                     <input type="text" class="form-control" id="direccion" name="direccion"   value="<?php echo!empty($dato['u_direccion']) ? $dato['u_direccion'] : ''; ?>" disabled>
                                 </div>
                                 <div class="mb-3">
-                                    <label for="exampleInputEmail1" class="form-label">Fecha de nacimiento</label>
-                                    <input type="date" class="form-control" id="fecha"  name="fecha" value="<?php echo!empty($dato['u_fecha_nacimiento']) ? $dato['u_fecha_nacimiento'] : ''; ?>" disabled>
+                                    <label for="exampleInputEmail1"  class="form-label">Fecha de nacimiento</label>
+                                    <input type="date" class="form-control" id="fecha" min="1985-01-01" max="2004-01-01" name="fecha" value="<?php echo!empty($dato['u_fecha_nacimiento']) ? $dato['u_fecha_nacimiento'] : ''; ?>" disabled>
                                 </div>
 
                                 

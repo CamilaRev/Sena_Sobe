@@ -119,7 +119,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
                             <div class="mb-3">
                                 <label for="exampleInputEmail1" class="form-label">Celular</label>
-                                <input type="tel" class="form-control" id="celular" name="celular" placeholder="Ingrese su numero de Celular" required>
+                                <input type="tel" class="form-control" id="celular" name="celular" placeholder="Ingrese su número de Celular" required>
                             </div>
 
 
@@ -131,7 +131,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                             </div>
                             <div class="mb-3">
                                
-                                <input type="text" class="form-control" id="direccion" name="direccion" placeholder="Ingrese su Direccion" required>
+                                <input type="text" class="form-control" id="direccion" name="direccion" placeholder="Ingrese su Dirección" required>
                             </div>
                             <div class="mb-3">
                             <label for="fecha" class="form-label">Fecha de Nacimiento</label>

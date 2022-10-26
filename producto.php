@@ -169,7 +169,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 
 
-                        <!-- ACTUALIZAR LIBRO -->
+                        <!-- ACTUALIZAR producto-->
                         <td>
                             <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModalActualizar<?php echo $dato['p_id'] ?>">
                                 <i class='bx bxs-check-circle'></i>
@@ -219,7 +219,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
                                                         <div class="mb-3">
                                                             <label for="exampleInputEmail1" class="form-label">Stock</label>
-                                                            <input type="number" class="form-control" id="stock" name="stock" placeholder="stock del producto" value="<?php echo!empty($dato['p_stock']) ? $dato['p_stock'] :'error de stock'; ?>" required>
+                                                            <input type="number" class="form-control" id="stock" name="stock" min="1" placeholder="stock del producto" value="<?php echo!empty($dato['p_stock']) ? $dato['p_stock'] :'error de stock'; ?>" required>
 
                                                         </div>
 
@@ -230,7 +230,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                                         </div>
                                                         <div class="mb-3">
                                                             <label for="exampleInputEmail1" class="form-label">Fecha de vencimiento</label>
-                                                            <input type="date" class="form-control" id="fecha" name="fecha" placeholder="Fecha de Vencimiento"  value="<?php echo!empty($dato['p_fecha_vencimiento']) ? $dato['p_fecha_vencimiento'] : ''; ?>" required>
+                                                            <input type="date" class="form-control" id="fecha" name="fecha" min="2022-10-01" max="2024-01-01" placeholder="Fecha de Vencimiento"  value="<?php echo!empty($dato['p_fecha_vencimiento']) ? $dato['p_fecha_vencimiento'] : ''; ?>" required>
                                                         </div>
 
                                                     </div>
