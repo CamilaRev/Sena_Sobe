@@ -32,9 +32,9 @@
                     <strong>&copy; 2022 Kotidiana</strong>
                 </center>
             </div>
-            <a class="navbar-brand" href="#"> <img src="imag/Logos.jpg" alt="grupo de trabajo" style="width: 15%; height: 40%;"
+            <a class="navbar-brand" href="#"> <img src="productos/Logos.jpg" alt="grupo de trabajo" style="width: 15%; height: 40%;"
   
-             class="navbar-brand" href="#"> <img src="imag/sena.png" alt="SENA" style="width: 15%; height: 40%;">
+             class="navbar-brand" href="#"> <img src="productos/sena.png" alt="SENA" style="width: 15%; height: 40%;">
         </div>
     </div>
 

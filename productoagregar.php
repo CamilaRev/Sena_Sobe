@@ -8,7 +8,7 @@ $precio = $_POST['precio'];
 $stock = $_POST['stock'];
 $fechavencimiento = $_POST['fecha'];
 
-$carpetaimagen = "/kotidiana/productos/";
+$carpetaimagen = "./Sobe/productos/";
 $servidorimagen = $_SERVER['DOCUMENT_ROOT'] . $carpetaimagen;
 $imagen = $_FILES['imagen']['name'];
 $extension = pathinfo($imagen, PATHINFO_EXTENSION);
@@ -20,7 +20,7 @@ $cantidad = $query->fetchColumn();
 if ($cantidad != 0) {
     echo '<script language="javascript">alert("El producto esta registrado");</script>';
 } elseif ($extension != 'jpg') {
-    echo '<script language="javascript">alert("Imagen JPG");</script>';
+    echo '<script language="javascript">alert(" Imagen JPG");</script>';
 } else {
     $nombre_imagen = "PRO" . $fecha . "COD" . $hora . "." . $extension;
     $destinoimagen = $servidorimagen . $nombre_imagen; //RUTA DONDE SE ALAMCENA IMAGEN 

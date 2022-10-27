@@ -4,7 +4,7 @@
     <?php include_once 'navinicio.php' ?>
     <main>
         <div class="card-header bg-primary" style="color: white;">
-            <strong>CATALOGO DE KOTIDIANA</strong>
+            <strong>CATALOGO DE Sobe</strong>
         </div>
         <br />
 

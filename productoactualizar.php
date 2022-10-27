@@ -11,7 +11,7 @@ $stock = $_POST['stock'];
 $fechavencimiento = $_POST['fecha'];
 $imagenvieja = $_POST['imagenvieja'];
 
-$carpetaimagen = "/kotidiana/productos/";
+$carpetaimagen = "./Sobe/productos/";
 $servidorimagen = $_SERVER['DOCUMENT_ROOT'] . $carpetaimagen;
 $imagen = $_FILES['imagen']['name'];
 $extension = pathinfo($imagen, PATHINFO_EXTENSION);

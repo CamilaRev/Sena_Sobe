@@ -36,7 +36,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <main>
     <link rel="stylesheet" href="css/index.css">
         <div class="card-header bg-primary" style="color: white;">
-            <strong>CATALOGO DE KOTIDIANA</strong>
+            <strong>CATALOGO DE SOBE</strong>
         </div>
         <br/>
 

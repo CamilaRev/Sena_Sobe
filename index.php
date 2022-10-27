@@ -15,7 +15,7 @@
 
     <div class="card__father">
       <div class="card1">
-        <div class="card__front" style="background-image: url(imag/img2.png);">
+        <div class="card__front" style="background-image: url(productos/img2.png);">
           <div class="bg"></div>
           <div class="body__card_front">
             <h1><strong>¿Por qué maquillarse tiene beneficios?</strong></h1>
@@ -35,7 +35,7 @@
 
     <div class="card__father">
       <div class="card1">
-        <div class="card__front" style="background-image: url(imag/img3.png);">
+        <div class="card__front" style="background-image: url(productos/img3.png);">
           <div class="bg"></div>
           <div class="body__card_front">
             <h1><strong>¿Por qué usar nuestros cosméticos?</strong></h1>
@@ -53,7 +53,7 @@
 
     <div class="card__father">
       <div class="card1">
-        <div class="card__front" style="background-image: url(imag/img4.png);">
+        <div class="card__front" style="background-image: url(prodyctos/img4.png);">
           <div class="bg"></div>
           <div class="body__card_front">
             <h1><strong> "MIRA AQUÍ"</strong></h1>
@@ -85,7 +85,7 @@
     <div class="container">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="imag/q.png" class="d-block w-100" alt="...">
+          <img src="productos/q.png" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
             <h1>Kotidiana</h1>
             <h3><strong> "Que tu día sea tan perfecto como tu maquillaje"</strong></h3>
@@ -93,7 +93,7 @@
         </div>
 
         <div class="carousel-item">
-          <img src="imag/m1.png" class="d-block w-100" alt="...">
+          <img src="productos/m1.png" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
             <h1></h1>
             <h3><strong> "La vida es más bonita con café, pestañas y actitud" </strong></h3>
@@ -101,7 +101,7 @@
         </div>
 
         <div class="carousel-item">
-          <img src="imag/v1.png" class="d-block w-100" alt="...">
+          <img src="productos/v1.png" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
 
             <h3><strong> la creatividad es tu mejor habilidad de maquillaje, no tengas miedo de experimentar</strong></h3>
