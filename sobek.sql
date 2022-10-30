@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
--- Servidor: 127.0.0.1
--- Tiempo de generación: 23-10-2022 a las 01:00:01
--- Versión del servidor: 10.4.19-MariaDB
--- Versión de PHP: 7.4.20
+-- Host: 127.0.0.1
+-- Generation Time: Oct 30, 2022 at 02:50 PM
+-- Server version: 10.4.24-MariaDB
+-- PHP Version: 8.1.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `sobek`
+-- Database: `sobe1`
 --
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `carrito`
+-- Table structure for table `carrito`
 --
 
 CREATE TABLE `carrito` (
@@ -41,7 +41,7 @@ CREATE TABLE `carrito` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `producto`
+-- Table structure for table `producto`
 --
 
 CREATE TABLE `producto` (
@@ -57,7 +57,7 @@ CREATE TABLE `producto` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Volcado de datos para la tabla `producto`
+-- Dumping data for table `producto`
 --
 
 INSERT INTO `producto` (`p_id`, `p_codigo`, `p_nombre`, `p_categoria`, `p_marca`, `p_precio`, `p_stock`, `p_foto`, `p_fecha_vencimiento`) VALUES
@@ -65,12 +65,16 @@ INSERT INTO `producto` (`p_id`, `p_codigo`, `p_nombre`, `p_categoria`, `p_marca`
 (2, '476890', 'Delineador', 'Maquillaje', 'Esika', 13457, 63, 0x2f6b6f74696469616e612f70726f647563746f732f50524f3230323231303138434f443233353233332e6a7067, '2022-10-06'),
 (3, '7654987', 'Labial', 'Maquillaje', 'Esika', 14500, 59, 0x2f6b6f74696469616e612f70726f647563746f732f50524f3230323231303138434f443233353335322e6a7067, '2022-10-06'),
 (4, '54332212', 'Removedor de uñas', 'Maquillaje', 'Avon', 56700, 15, 0x2f6b6f74696469616e612f70726f647563746f732f50524f3230323231303138434f443233353830312e6a7067, '2022-09-28'),
-(5, '76543', 'Delineador', 'Maquillaje', 'Yambal', 6474, 67, 0x2f6b6f74696469616e612f70726f647563746f732f50524f3230323231303232434f443137353930322e6a7067, '2022-10-21');
+(6, '1', 'aa', 'Maquillaje', 'Avon', 20000, 12, 0x2e2f536f62652f70726f647563746f732f50524f3230323231303237434f443138323235312e6a7067, '2022-10-13'),
+(7, '2', 'prueba', 'Maquillaje', 'Avon', 2000, 5, 0x2e2f536f62652f70726f647563746f732f50524f3230323231303237434f443138323431342e6a7067, '2022-10-14'),
+(8, '3', 'prueba3', 'Otro', 'Esika', 2000, 5, 0x2e2f536f62652f70726f647563746f732f50524f3230323231303237434f443138323933342e6a7067, '2022-10-20'),
+(9, '4', 'prueba4', 'Productos faciales', 'Yambal', 8000, 6, 0x2e2f536f62652f70726f647563746f732f50524f3230323231303237434f443138333130342e6a7067, '2022-10-06'),
+(10, '5555', 'camisa', 'Productos faciales', 'Esika', 8555, 5, 0x2e2f536f62652f70726f647563746f732f50524f3230323231303238434f443138303630322e6a7067, '2022-10-12');
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `usuario`
+-- Table structure for table `usuario`
 --
 
 CREATE TABLE `usuario` (
@@ -88,21 +92,22 @@ CREATE TABLE `usuario` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Volcado de datos para la tabla `usuario`
+-- Dumping data for table `usuario`
 --
 
 INSERT INTO `usuario` (`u_id`, `u_nombres`, `u_apellidos`, `u_identificacion`, `u_email`, `u_ciudad`, `u_direccion`, `u_celular`, `u_fecha_nacimiento`, `u_tipo`, `u_contrasena`) VALUES
-(1, 'MANUE LUIS', 'LOPEZ LOPEZ', 10035656879, 'luis@hotmail.com', 'Bogota', 'Calle Principal', 1003565687, '2022-06-08', 1, '12345'),
+(1, 'MANUE LUIS', 'LOPEZ LOPEZ', 10035656879, 'luis@hotmail.com', 'Bogota', 'Calle Principal', 10035656879, '2022-06-08', 1, '12345'),
 (2, 'SANDRA MARIA', 'VARGAS PEREZ', 10034441111, 'sandra@gmail.com', 'Bogota', 'Avenida', 314678888, '2022-06-07', 1, '12345'),
 (3, 'FRANCISCO JOSE', 'LOPEZ SOSA', 10035556666, 'francisco@gmail.com', 'Bogota', 'Calle 12', 3245657687, '2022-06-01', 1, '12345'),
 (6, 'Diana', 'Mora', 105522, 'dianmor@gmail.com', 'Bogota', 'Cr12#12-07', 3245678876, '2022-09-28', 2, '1234'),
 (7, 'Edi', 'Puerto', 10552205, 'edipuert@gmail.com', 'Duitama', 'cll12#17-26', 8957649587, '2022-09-30', 2, '12348'),
-(8, 'Luis', 'Pita', 2, 'gjebal@gmail.com', 'Duitama', 'Cr23-#12-04', 56323281, '2021-08-21', 2, '1234');
+(8, 'Luis', 'Pita', 2, 'gjebal@gmail.com', 'Duitama', 'Cr23-#12-04', 56323281, '2021-08-21', 2, '1234'),
+(9, 'camila', 'revelo', 1086107722, 'cami@gmail.com', 'pupiales', 'jmh', 1086107722, '2001-02-08', 2, '12345');
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `venta`
+-- Table structure for table `venta`
 --
 
 CREATE TABLE `venta` (
@@ -124,7 +129,7 @@ CREATE TABLE `venta` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Volcado de datos para la tabla `venta`
+-- Dumping data for table `venta`
 --
 
 INSERT INTO `venta` (`v_id`, `v_factura`, `v_nombre`, `v_marca`, `v_precio`, `v_cantidad`, `v_total`, `v_fkidusuario`, `v_identificacion`, `v_nombresapellidos`, `v_ciudad`, `v_direccion`, `v_celular`, `v_fecha`, `v_hora`) VALUES
@@ -139,11 +144,11 @@ INSERT INTO `venta` (`v_id`, `v_factura`, `v_nombre`, `v_marca`, `v_precio`, `v_
 (9, 'KOT20221021C215821', 'Removedor de uñas', 'Avon', 56700, 2, 113400, 7, 10552205, 'Edi Puerto', 'Duitama', 'cll12#17-26', 8957649587, '2022-10-21', '21:58:21');
 
 --
--- Índices para tablas volcadas
+-- Indexes for dumped tables
 --
 
 --
--- Indices de la tabla `carrito`
+-- Indexes for table `carrito`
 --
 ALTER TABLE `carrito`
   ADD PRIMARY KEY (`c_id`),
@@ -151,58 +156,58 @@ ALTER TABLE `carrito`
   ADD KEY `idusuariofk` (`c_idusuariofk`);
 
 --
--- Indices de la tabla `producto`
+-- Indexes for table `producto`
 --
 ALTER TABLE `producto`
   ADD PRIMARY KEY (`p_id`);
 
 --
--- Indices de la tabla `usuario`
+-- Indexes for table `usuario`
 --
 ALTER TABLE `usuario`
   ADD PRIMARY KEY (`u_id`);
 
 --
--- Indices de la tabla `venta`
+-- Indexes for table `venta`
 --
 ALTER TABLE `venta`
   ADD PRIMARY KEY (`v_id`),
   ADD KEY `fkidusuario` (`v_fkidusuario`);
 
 --
--- AUTO_INCREMENT de las tablas volcadas
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT de la tabla `carrito`
+-- AUTO_INCREMENT for table `carrito`
 --
 ALTER TABLE `carrito`
   MODIFY `c_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
--- AUTO_INCREMENT de la tabla `producto`
+-- AUTO_INCREMENT for table `producto`
 --
 ALTER TABLE `producto`
-  MODIFY `p_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `p_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
--- AUTO_INCREMENT de la tabla `usuario`
+-- AUTO_INCREMENT for table `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `u_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `u_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
--- AUTO_INCREMENT de la tabla `venta`
+-- AUTO_INCREMENT for table `venta`
 --
 ALTER TABLE `venta`
   MODIFY `v_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
--- Restricciones para tablas volcadas
+-- Constraints for dumped tables
 --
 
 --
--- Filtros para la tabla `carrito`
+-- Constraints for table `carrito`
 --
 ALTER TABLE `carrito`
   ADD CONSTRAINT `idproductofk` FOREIGN KEY (`c_idproductofk`) REFERENCES `producto` (`p_id`) ON DELETE CASCADE ON UPDATE CASCADE,
