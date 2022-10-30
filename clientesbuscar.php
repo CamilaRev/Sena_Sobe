@@ -7,7 +7,7 @@ $datobuscar = $_GET['dato'];
     <?php include_once 'navadmin.php' ?>
     <main>
         <div class="card-header bg-primary" style="color: white;">
-            <strong>MODULO DE CLIENTES</strong>
+            <strong>MÓDULO DE CLIENTES</strong>
         </div>
         <br/>
 

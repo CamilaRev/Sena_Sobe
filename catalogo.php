@@ -32,7 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <?php include_once 'navcliente.php' ?>
     <main>
         <div class="card-header bg-primary" style="color: white;">
-            <strong>CATALOGO DE SOBE</strong>
+            <strong>CATÁLOGO DE SOBE</strong>
         </div>
         <br />
 
@@ -56,7 +56,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                         ?>
                             <div class="col">
                                 <div class="card" style="width: 18rem;">
-                                    <img src="http://localhost:8080/<?php echo $dato['p_foto'] ?>" class="card-img-top" alt="...">
+                                    <img src="http://localhost/<?php echo $dato['p_foto'] ?>" class="card-img-top" alt="...">
                                     <div class="card-body">
 
                                         <form ROLE="FORM" METHOD="POST" ACTION="">

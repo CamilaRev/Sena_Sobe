@@ -4,7 +4,7 @@
     <?php include_once 'navinicio.php' ?>
     <main>
         <div class="card-header bg-primary" style="color: white;">
-            <strong>CATALOGO DE Sobe</strong>
+            <strong>CATALOGO DE SOBE</strong>
         </div>
         <br />
 
@@ -28,7 +28,7 @@
                         ?>
                             <div class="col">
                                 <div class="card" style="width: 18rem;">
-                                    <img src="http://localhost:8080/phpmyadmin/index.php?route=/database/structure&server=1&db=kotidiana<?php echo $dato['p_foto'] ?>" class="card-img-top" alt="...">
+                                    <img src="http://localhost/<?php echo $dato['p_foto'] ?>" class="card-img-top" alt="...">
                                     <div class="card-body">
 
                                         <form ROLE="FORM" METHOD="POST" ACTION="">

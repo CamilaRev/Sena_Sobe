@@ -15,7 +15,7 @@ $sumatoria = 0;
     <?php include_once 'navcliente.php' ?>
     <main>
         <div class="card-header bg-primary" style="color: white;">
-            <strong>INFORMACION DE LA FACTURA <?php echo $facturas; ?></strong>
+            <strong>INFORMACIÓN DE LA FACTURA <?php echo $facturas; ?></strong>
         </div>
         <br/>
 

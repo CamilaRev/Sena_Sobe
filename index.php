@@ -87,7 +87,7 @@
         <div class="carousel-item active">
           <img src="productos/q.png" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
-            <h1>Kotidiana</h1>
+            <h1>SOBE</h1>
             <h3><strong> "Que tu día sea tan perfecto como tu maquillaje"</strong></h3>
           </div>
         </div>

@@ -39,5 +39,5 @@ $url = $_SERVER["REQUEST_URI"];
         <script src="jquery/jquery-ui.js" type="text/javascript"></script>
         <link href="jquery/jquery-ui.min.css" rel="stylesheet" type="text/css"/>
         <link href='boxicons/css/boxicons.min.css' rel='stylesheet'>
-        <title>Kotidianaaa</title>
+        <title>SOBE</title>
     </head>

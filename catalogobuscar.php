@@ -36,14 +36,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <main>
     <link rel="stylesheet" href="css/index.css">
         <div class="card-header bg-primary" style="color: white;">
-            <strong>CATALOGO DE SOBE</strong>
+            <strong>CATÁLOGO DE SOBE</strong>
         </div>
         <br/>
 
         <div class="container">
             <div class="card">
                 <div class="card-header">
-                    <h6>Catalogo</h6>
+                    <h6>Catálogo</h6>
                     <form action="catalogobuscar.php">
                         <div class="input-group mb-3">
                             <input type="search" class="form-control form-control-sm" name="dato" id="dato" placeholder="Buscar por Nombre o Marca" >
@@ -60,7 +60,7 @@ foreach ($pdo->query($producto) as $dato) {
     ?>
                             <div class="col">
                                 <div class="card" style="width: 18rem;">
-                                    <img src="http://localhost:8080/<?php echo $dato['p_foto'] ?>"  class="card-img-top" alt="...">
+                                    <img src="http://localhost/<?php echo $dato['p_foto'] ?>"  class="card-img-top" alt="...">
                                     <div class="card-body">
 
                                         <form  ROLE="FORM" METHOD="POST" ACTION="">

@@ -30,7 +30,7 @@ $datobuscar = $_GET['dato'];
                                 <th scope="col"><center>No.</center></th>
                         <th scope="col"><center>Factura</center></th>
                         <th scope="col"><center>Total</center></th>
-                        <th scope="col"><center>Fecha facturacion</center></th>
+                        <th scope="col"><center>Fecha facturación</center></th>
 
                         <th scope="col"><center>Ver</center></th>
 

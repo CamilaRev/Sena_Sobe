@@ -51,7 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <nav class="navbar navbar-expand-lg  sticky-top" style="background-color:#7EA1E7;">
     <div class="container-fluid">
         <a class="navbar-brand" href="#"> <img src="productos/Logo3.PNG" alt="logo belleza" style="width: 40%; height: 40%;">
-           <h3> Kotidiana</h3></a>
+           <h3> SOBE</h3></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>

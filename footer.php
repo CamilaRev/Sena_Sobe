@@ -29,7 +29,7 @@
                 <br /><br />
                 <center>
                     reservados de Autor <br />
-                    <strong>&copy; 2022 Kotidiana</strong>
+                    <strong>&copy; 2022 SOBE</strong>
                 </center>
             </div>
             <a class="navbar-brand" href="#"> <img src="productos/Logos.jpg" alt="grupo de trabajo" style="width: 15%; height: 40%;"
