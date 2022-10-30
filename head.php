@@ -9,7 +9,7 @@ $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
         <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
-        <link rel="shortcut icon" href="productos/Logo3.PNG">
+        <link rel="shortcut icon" href="productos/LogoP.PNG">
         <script src="jquery/jquery-ui.js" type="text/javascript"></script>
         <link href="jquery/jquery-ui.min.css" rel="stylesheet" type="text/css"/>
         <link href='boxicons/css/boxicons.min.css' rel='stylesheet'>
