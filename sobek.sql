@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 30, 2022 at 02:50 PM
+-- Generation Time: Nov 01, 2022 at 03:11 AM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -61,15 +61,9 @@ CREATE TABLE `producto` (
 --
 
 INSERT INTO `producto` (`p_id`, `p_codigo`, `p_nombre`, `p_categoria`, `p_marca`, `p_precio`, `p_stock`, `p_foto`, `p_fecha_vencimiento`) VALUES
-(1, '0987654', 'Crema para peinar', 'Productos faciales', 'Esika', 23400, 29, 0x2f6b6f74696469616e612f70726f647563746f732f50524f3230323231303138434f443233333033322e6a7067, '2022-10-04'),
-(2, '476890', 'Delineador', 'Maquillaje', 'Esika', 13457, 63, 0x2f6b6f74696469616e612f70726f647563746f732f50524f3230323231303138434f443233353233332e6a7067, '2022-10-06'),
-(3, '7654987', 'Labial', 'Maquillaje', 'Esika', 14500, 59, 0x2f6b6f74696469616e612f70726f647563746f732f50524f3230323231303138434f443233353335322e6a7067, '2022-10-06'),
-(4, '54332212', 'Removedor de uñas', 'Maquillaje', 'Avon', 56700, 15, 0x2f6b6f74696469616e612f70726f647563746f732f50524f3230323231303138434f443233353830312e6a7067, '2022-09-28'),
-(6, '1', 'aa', 'Maquillaje', 'Avon', 20000, 12, 0x2e2f536f62652f70726f647563746f732f50524f3230323231303237434f443138323235312e6a7067, '2022-10-13'),
-(7, '2', 'prueba', 'Maquillaje', 'Avon', 2000, 5, 0x2e2f536f62652f70726f647563746f732f50524f3230323231303237434f443138323431342e6a7067, '2022-10-14'),
-(8, '3', 'prueba3', 'Otro', 'Esika', 2000, 5, 0x2e2f536f62652f70726f647563746f732f50524f3230323231303237434f443138323933342e6a7067, '2022-10-20'),
-(9, '4', 'prueba4', 'Productos faciales', 'Yambal', 8000, 6, 0x2e2f536f62652f70726f647563746f732f50524f3230323231303237434f443138333130342e6a7067, '2022-10-06'),
-(10, '5555', 'camisa', 'Productos faciales', 'Esika', 8555, 5, 0x2e2f536f62652f70726f647563746f732f50524f3230323231303238434f443138303630322e6a7067, '2022-10-12');
+(11, '2', 'Pestañina Blue', 'Maquillaje', 'Avon', 15000, 20, 0x2e2f536f62652f70726f647563746f732f50524f3230323231303330434f443039303230342e6a7067, '2023-09-01'),
+(12, '1', 'Kit anti-manchas', 'Productos faciales', 'Esika', 59999, 10, 0x2e2f536f62652f70726f647563746f732f50524f3230323231303330434f443039303334322e6a7067, '2024-01-01'),
+(13, '3', 'perfume Elie', 'Otro', 'Yambal', 69900, 19, 0x2e2f536f62652f70726f647563746f732f50524f3230323231303330434f443039303530312e6a7067, '2023-12-31');
 
 -- --------------------------------------------------------
 
@@ -141,7 +135,8 @@ INSERT INTO `venta` (`v_id`, `v_factura`, `v_nombre`, `v_marca`, `v_precio`, `v_
 (6, 'KOT20221019C001123', 'Removedor de uñas', 'Avon', 56700, 5, 283500, 7, 10552205, 'Edi Puerto', 'Duitama', 'cll12#17-26', 8957649587, '2022-10-19', '00:11:23'),
 (7, 'KOT20221021C215821', 'Removedor de uñas', 'Avon', 56700, 6, 340200, 7, 10552205, 'Edi Puerto', 'Duitama', 'cll12#17-26', 8957649587, '2022-10-21', '21:58:21'),
 (8, 'KOT20221021C215821', 'Labial', 'Esika', 14500, 4, 58000, 7, 10552205, 'Edi Puerto', 'Duitama', 'cll12#17-26', 8957649587, '2022-10-21', '21:58:21'),
-(9, 'KOT20221021C215821', 'Removedor de uñas', 'Avon', 56700, 2, 113400, 7, 10552205, 'Edi Puerto', 'Duitama', 'cll12#17-26', 8957649587, '2022-10-21', '21:58:21');
+(9, 'KOT20221021C215821', 'Removedor de uñas', 'Avon', 56700, 2, 113400, 7, 10552205, 'Edi Puerto', 'Duitama', 'cll12#17-26', 8957649587, '2022-10-21', '21:58:21'),
+(10, 'KOT20221030C103135', 'perfume Elie', 'Yambal', 69900, 1, 69900, 9, 1086107722, 'camila revelo', 'pupiales', 'jmh', 1086107722, '2022-10-30', '10:31:35');
 
 --
 -- Indexes for dumped tables
@@ -182,13 +177,13 @@ ALTER TABLE `venta`
 -- AUTO_INCREMENT for table `carrito`
 --
 ALTER TABLE `carrito`
-  MODIFY `c_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `c_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `producto`
 --
 ALTER TABLE `producto`
-  MODIFY `p_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `p_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `usuario`
@@ -200,7 +195,7 @@ ALTER TABLE `usuario`
 -- AUTO_INCREMENT for table `venta`
 --
 ALTER TABLE `venta`
-  MODIFY `v_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `v_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- Constraints for dumped tables
