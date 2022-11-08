@@ -1,3 +1,4 @@
+
 <?php
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     date_default_timezone_set('America/Bogota');
@@ -50,8 +51,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 <nav class="navbar navbar-expand-lg  sticky-top" style="background-color:#7EA1E7;">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#"> <img src="productos/LogoP.PNG" alt="logo belleza" style="width: 40%; height: 40%;">
-           <h3></h3></a>
+        <a class="navbar-brand" href="#"> <img src="productos/LogoP.png" alt="logo belleza" style="width: 40%; height: 40%;">
+            <h3></h3>
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -81,6 +83,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             </ul>
         </div>
     </div>
+   
 </nav>
 
 <div class="modal fade" id="exampleModalUsuario" tabindex="-1" aria-labelledby="exampleModalUsuario" aria-hidden="true">
@@ -98,22 +101,22 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                         <div class="col-md-6">
 
                             <div class="mb-3">
-                                
+
                                 <input type="number" class="form-control" id="cedula" name="cedula" placeholder="Ingrese su numero de Cedula" min="1" pattern="^[0-9]+" required>
                             </div>
 
                             <div class="mb-3">
-                               
+
                                 <input type="text" class="form-control" id="nombres" name="nombres" placeholder="Ingrese sus Nombres" required>
                             </div>
 
                             <div class="mb-3">
-                                
+
                                 <input type="text" class="form-control" id="apellidos" name="apellidos" placeholder="Ingrese sus Apellidos" required>
                             </div>
 
                             <div class="mb-3">
-                                
+
                                 <input type="email" class="form-control" id="email" name="email" placeholder="Ingrese su Correo Electronico" required>
                             </div>
 
@@ -126,25 +129,25 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                         </div>
                         <div class="col-md-6">
                             <div class="mb-3">
-                              
+
                                 <input type="text" class="form-control" id="ciudad" name="ciudad" placeholder="Ingrese su Ciudad" required>
                             </div>
                             <div class="mb-3">
-                               
+
                                 <input type="text" class="form-control" id="direccion" name="direccion" placeholder="Ingrese su Dirección" required>
                             </div>
                             <div class="mb-3">
-                            <label for="fecha" class="form-label">Fecha de Nacimiento</label>
-                                <input type="date" class="form-control" min="1985-01-01" max="2004-01-01"  id="fecha" name="fecha" placeholder="Ingrese su Fecha de nacimiento" required>
+                                <label for="fecha" class="form-label">Fecha de Nacimiento</label>
+                                <input type="date" class="form-control" min="1985-01-01" max="2004-01-01" id="fecha" name="fecha" placeholder="Ingrese su Fecha de nacimiento" required>
                             </div>
 
                             <div class="mb-3">
-                                
+
                                 <input type="password" class="form-control" id="contrasena" name="contrasena" placeholder="Ingrese su Contraseña" required>
                             </div>
 
                             <div class="mb-3">
-                                
+
                                 <input type="password" class="form-control" id="contrasena2" name="contrasena2" placeholder="Confirmar su Contraseña" required>
                             </div>
 
@@ -167,48 +170,51 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <!--INICIAR SESION-->
 
 
-<div class="modal fade" id="exampleModalsesion" tabindex="-1" aria-labelledby="exampleModalsesion" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered ">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalsesion">Iniciar sesión</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <form ROLE="FORM" METHOD="POST" ACTION="">
-                    <input type="hidden" class="form-control" id="accion" name="accion" value="11">
 
-                    <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Cedula</label>
-                        <input type="number" class="form-control" id="usuario" name="usuario" placeholder="Ingrese su numero de Cedula" min="1" pattern="^[0-9]+" required>
-                    </div>
 
-                    <div class="mb-3">
-                        <label for="password" class="form-label">Contraseña</label>
-                        <input type="password" class="form-control" id="password" name="contrasena" placeholder="Ingrese sus Contraseña" required>
-                    </div>
-                    <div class="mb-4 form-check">
-                        <input type="checkbox" name="connected" class="form-check-input" onclick="verpassword()">
-                        <label for="conneted" class="form-check-label">Mostrar Contraseña</label>
-                    </div>
-                    <center><button type="submit" class="btn btn-primary">Aceptar</button></center>
-                </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+
+    <div class="modal fade" id="exampleModalsesion" tabindex="-1" aria-labelledby="exampleModalsesion" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered ">
+            
+            <div class="modal-content">
+                <div class="modal-header container__login">
+                    <h5 class="modal-title" id="exampleModalsesion"><strong>INICIAR SESIÓN</strong></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form   ROLE="FORM" METHOD="POST" ACTION="">
+                        <input type="hidden" class="form-control" id="accion" name="accion" value="11">
+
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Cédula</label>
+                            <input type="number" class="form-control" id="usuario" name="usuario" placeholder="Ingrese su número de Cedula" min="1" pattern="^[0-9]+" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" id="password" name="contrasena" placeholder="Ingrese su Contraseña" required>
+                        </div>
+                        <div class="mb-4 form-check">
+                            <input type="checkbox" name="connected" class="form-check-input" onclick="verpassword()">
+                            <label for="conneted" class="form-check-label">Mostrar Contraseña</label>
+                        </div>
+                        <center><button type="submit" class="btn btn-primary">Aceptar</button></center>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
 <script>
-  function verpassword() {
-    var tipo = document.getElementById("password");
-    if (tipo.type == "password") {
-      tipo.type = "text";
+    function verpassword() {
+        var tipo = document.getElementById("password");
+        if (tipo.type == "password") {
+            tipo.type = "text";
+        } else {
+            tipo.type = "password";
+        }
     }
-    else {
-      tipo.type = "password";
-    }
-  }
 </script>

@@ -13,5 +13,6 @@ $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         <script src="jquery/jquery-ui.js" type="text/javascript"></script>
         <link href="jquery/jquery-ui.min.css" rel="stylesheet" type="text/css"/>
         <link href='boxicons/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" src="./css/index.css" type="text/css">
         <title>SOBE</title>
     </head>

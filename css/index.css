@@ -80,6 +80,14 @@ a {
     -webkit-font-smoothing: antialiased;
 }
 
+.container__login {
+    background-color: rgb(221, 221, 221);
+
+    background-image: url("https://image.shutterstock.com/image-vector/abstract-background-design-colorful-website-260nw-1760427908.jpg");
+    
+    
+
+}
 .card1 {
     font-size: 70%;
     position: relative;
@@ -237,7 +245,7 @@ body {
     background-attachment: fixed;
     background-position: center center;
     background-size: cover;
-    background-image: url("https://img.freepik.com/vector-gratis/fondo-acuarela-flores-dibujadas-espacio-vacio_52683-61606.jpg?w=2000");
+    background-image: url("https://img.freepik.com/fotos-premium/regalo-san-valentin-fondo-herramientas-cosmeticos-maquillaje-cosmeticos-belleza-productos-cosmeticos-faciales-paquete-lapiz-labial-sombra-ojos-flor-rosa-collar-perlas-tono-vintage_35007-256.jpg?w=2000");
 
 }
 
