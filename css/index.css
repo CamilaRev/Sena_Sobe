@@ -59,8 +59,11 @@
 
 #footer {
     background: linear-gradient(90deg, #92d0ed, #51abd1 25%, #E26C4E);
-    padding-top: 40px;
-    margin-top: 50px;
+
+}
+#nav_inicio {
+    background: linear-gradient(90deg, #92d0ed, #51abd1 25%, #E26C4E);
+   
 }
 
 #footer a {
@@ -85,8 +88,13 @@ a {
 
     background-image: url("https://image.shutterstock.com/image-vector/abstract-background-design-colorful-website-260nw-1760427908.jpg");
     
-    
 
+}
+
+.nav_inicio {
+    background: linear-gradient(90deg, #92d0ed, #51abd1 25%, #E26C4E);
+    padding-top: 20px;
+    margin-top: 20px;
 }
 .card1 {
     font-size: 70%;

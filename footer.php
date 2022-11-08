@@ -3,9 +3,47 @@
 
 
 <link rel="stylesheet" href="css/index.css">
+<!--
+<footer>
+<div class="container_footer">
+    <div class="box_footer">
+        <div class="logo">
+            <img src="" alt="">
+        </div>
+        <div class="terms">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos quia est suscipit nobis aperiam? Beatae quam corporis, provident perspiciatis blanditiis, ea assumenda possimus rem temporibus officiis suscipit, numquam hic. Omnis.</p>
+        </div>
+    </div>
+    <div class="box__footer">
+        <h2>soluciones</h2>
+        <a href="">buenos productos</a>
+        <a href="">calidad</a>
+        <a href="">buen precio</a>
+        <a href=""></a>
+    </div>
+    <div class="box__footer">
+        <h2>compañia</h2>
+        <a href="">buenos productos</a>
+        <a href="">calidad</a>
+        <a href="">buen precio</a>
+        <a href=""></a>
+    </div>
+    <div class="box__footer">
+        <h2>redes socilaes</h2>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="">instagram</a>
+        <a href="">buen precio</a>
+        <a href=""></a>
+    </div>
 
 
-<footer id="footer" style="background-color: #e3f2fd;">
+
+</div>
+
+</footer>
+-->
+
+<footer id="footer">
    
     <div class="container">
         
@@ -40,8 +78,11 @@
 
 </footer>
 
+
 <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <script src="js/jquery-3.2.1.slim.min.js" type="text/javascript"></script>
 <script type="text/javascript" src="js/popper.min.js"></script>
 <script src="script.js"></script>
+<link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
