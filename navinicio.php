@@ -101,11 +101,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
    
 </nav>
 
-<div class="modal fade" id="exampleModalUsuario" tabindex="-1" aria-labelledby="exampleModalUsuario" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-xl">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalUsuario">Registrarme</h5>
+<div class="modal fade " id="exampleModalUsuario" tabindex="-1" aria-labelledby="exampleModalUsuario" aria-hidden="true">
+    <div class=" modal-dialog modal-dialog-centered modal-xl ">
+        <div class="modal-content container__registro">
+            <div class="modal-header container__login">
+               <h5 class="modal-title" id="exampleModalUsuario"><strong>REGISTRARME</strong></h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -191,7 +191,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <div class="modal fade" id="exampleModalsesion" tabindex="-1" aria-labelledby="exampleModalsesion" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered ">
             
-            <div class="modal-content">
+            <div class="modal-content container__login_fondo">
                 <div class="modal-header container__login">
                     <h5 class="modal-title" id="exampleModalsesion"><strong>INICIAR SESIÓN</strong></h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -201,12 +201,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                         <input type="hidden" class="form-control" id="accion" name="accion" value="11">
 
                         <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Cédula</label>
+                            <label for="exampleInputEmail1" class="form-label"><strong>Cédula</strong></label>
                             <input type="number" class="form-control" id="usuario" name="usuario" placeholder="Ingrese su número de Cedula" min="1" pattern="^[0-9]+" required>
                         </div>
 
                         <div class="mb-3">
-                            <label for="password" class="form-label">Contraseña</label>
+                            <label for="password" class="form-label"><strong>Contraseña</strong></label>
                             <input type="password" class="form-control" id="password" name="contrasena" placeholder="Ingrese su Contraseña" required>
                         </div>
                         <div class="mb-4 form-check">

@@ -266,14 +266,28 @@ a {
     -webkit-font-smoothing: antialiased;
 }
 
+.container__registro {
+    background-color: rgb(221, 221, 221);
+    
+    background-image: url("https://media.istockphoto.com/id/1307794659/es/foto/patr%C3%B3n-de-hex%C3%A1gonos-vectoriales-fondo-abstracto-geom%C3%A9trico-con-elementos-hexagonales-simples.jpg?s=612x612&w=0&k=20&c=E6aVWgORTJoi14mgC2yGBjaFaru48jDs57w85tH0gXw=");
+   
+    
+
+}
 .container__login {
     background-color: rgb(221, 221, 221);
-
+    
     background-image: url("https://image.shutterstock.com/image-vector/abstract-background-design-colorful-website-260nw-1760427908.jpg");
     
 
 }
+.container__login_fondo {
+    background-color: rgb(221, 221, 221);
+    
+    background-image: url("https://media.istockphoto.com/id/1333603905/es/foto/vista-superior-de-la-mano-femenina-sosteniendo-escrituras-de-l%C3%A1piz-en-la-plantilla-de-tarjeta.jpg?s=612x612&w=0&k=20&c=mwy-mpH7O-xIcGc-Z2IV4T1zkGrY0-VWg4WW88zGlsI=");
+    
 
+}
 .nav_inicio {
     background: linear-gradient(90deg, #92d0ed, #51abd1 25%, #E26C4E);
     padding-top: 20px;
