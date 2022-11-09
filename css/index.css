@@ -57,11 +57,7 @@
     color: rgb(160, 160, 161);
 }
 
-/*#footer {
-    background: linear-gradient(90deg, #92d0ed, #51abd1 25%, #E26C4E);
 
-}
-*/
 footer{
     width: 100%;
 
@@ -124,10 +120,8 @@ font-weight: 600;
     font-size: 40px;
 }
 
-#nav_inicio {
-    background: linear-gradient(90deg, #92d0ed, #51abd1 25%, #E26C4E);
-   
-}
+
+
 
 #footer a {
     color: #e9e7ea;
@@ -290,9 +284,15 @@ a {
 }
 .nav_inicio {
     background: linear-gradient(90deg, #92d0ed, #51abd1 25%, #E26C4E);
-    padding-top: 20px;
-    margin-top: 20px;
+
+    height: 120px;
 }
+
+.nav_inicio li a:hover{
+    background:#99ebfa;
+    opacity: .8;
+    
+    }
 .card1 {
     font-size: 70%;
     position: relative;

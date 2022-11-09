@@ -49,7 +49,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 
 
-<nav class="navbar navbar-expand-lg  sticky-top" id="nav_inicio">
+<nav class="navbar navbar-expand-lg  sticky-top nav_inicio">
 
 <div class="burbujas">
         <div class="burbuja"></div>
@@ -66,7 +66,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <div class="burbuja"></div>
   </div>
     <div class="container-fluid">
-        <a class="navbar-brand" href="#"> <img src="productos/LogoP.png" alt="logo belleza" style="width: 40%; height: 40%;">
+        <a class="navbar-brand" href="#"> <img src="productos/LogoP.png" alt="logo belleza" style="width: 30%; height: 30%;">
             <h3></h3>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
