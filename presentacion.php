@@ -6,7 +6,14 @@
         <div class="card-header bg-primary" style="color: white;">
             <strong>CATALOGO DE SOBE</strong>
         </div>
-        <br />
+ <center>       <br />
+<video autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto" width="640" height="360" controls >
+    <source src="videos/video1.mp4" type="video/mp4">
+    
+</video>
+ </center>
+
+
 
         <div class="container">
             <div class="card">

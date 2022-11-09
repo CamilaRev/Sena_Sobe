@@ -61,8 +61,8 @@
         </div>
         <div class="card__back">
           <div class="body__card_back">
-            <h1>¡No se arrepentira!</h1>
-            <p>Sin duda es la mejor comprá que hará</p>
+            <h1>¿Sabías que..?</h1>
+            <p>Cuidar tu piel todos los días, es como enviarle pequeñas noticas de amor a tu cuerpo</p>
 
           </div>
         </div>
@@ -103,7 +103,7 @@
             <img src="productos/v1.png" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
 
-              <h3><strong> la creatividad es tu mejor habilidad de maquillaje, no tengas miedo de experimentar</strong></h3>
+              <h3><strong> Mima tu piel, te va acompañar siempre</strong></h3>
             </div>
           </div>
 
