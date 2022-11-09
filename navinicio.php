@@ -50,6 +50,21 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 
 <nav class="navbar navbar-expand-lg  sticky-top" id="nav_inicio">
+
+<div class="burbujas">
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+  </div>
     <div class="container-fluid">
         <a class="navbar-brand" href="#"> <img src="productos/LogoP.png" alt="logo belleza" style="width: 40%; height: 40%;">
             <h3></h3>

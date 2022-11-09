@@ -66,71 +66,74 @@
 
           </div>
         </div>
-      </div>
-    </div>
-
-  </div>
-  <br> <br> <br>
-
-
-  <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-
-
-    <div class="container">
-      <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="5000">
-          <img src="productos/q.png" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h1>SOBE</h1>
-            <h3><strong> "Que tu día sea tan perfecto como tu maquillaje"</strong></h3>
-          </div>
-        </div>
-
-        <div class="carousel-item" data-bs-interval="5000">
-          <img src="productos/m1.png" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h1></h1>
-            <h3><strong> "La vida es más bonita con café, pestañas y actitud" </strong></h3>
-          </div>
-        </div>
-
-        <div class="carousel-item" data-bs-interval="5000">
-          <img src="productos/v1.png" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-
-            <h3><strong> la creatividad es tu mejor habilidad de maquillaje, no tengas miedo de experimentar</strong></h3>
-          </div>
-        </div>
-
 
       </div>
 
-
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
     </div>
+    <br> <br> <br>
+
+
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+
+
+      <div class="container">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="5000">
+            <img src="productos/q.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h1>SOBE</h1>
+              <h3><strong> "Que tu día sea tan perfecto como tu maquillaje"</strong></h3>
+            </div>
+          </div>
+
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="productos/m1.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h1></h1>
+              <h3><strong> "La vida es más bonita con café, pestañas y actitud" </strong></h3>
+            </div>
+          </div>
+
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="productos/v1.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+
+              <h3><strong> la creatividad es tu mejor habilidad de maquillaje, no tengas miedo de experimentar</strong></h3>
+            </div>
+          </div>
+
+
+        </div>
+
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    </div>
+
 
   </div>
 
-  <?php  ?> 
+  <?php  ?>
   <?php include_once 'footer.php' ?>
 
 
 
 
   <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
-  
+
 
   <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="bootstrap/js/bootstrap.min.js"></script>

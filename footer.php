@@ -3,47 +3,62 @@
 
 
 <link rel="stylesheet" href="css/index.css">
-<!--
+
 <footer>
-<div class="container_footer">
-    <div class="box_footer">
-        <div class="logo">
-            <img src="" alt="">
+
+    
+    <div class="container_footer">
+   
+        <div class="box__footer">
+            <div class="logo">
+                <img src="productos/logos.jpg" alt="">
+            </div>
+            <div class="terms">
+                <p>Desarrolladoras grupo
+                    <br> "Windows Ceros" </p>
+                    <a href="">Políticas de cambios y garantías</a>
+            </div>
         </div>
-        <div class="terms">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos quia est suscipit nobis aperiam? Beatae quam corporis, provident perspiciatis blanditiis, ea assumenda possimus rem temporibus officiis suscipit, numquam hic. Omnis.</p>
+        <div class="box__footer">
+            <h2>¿Cómo contactarnos?</h2>
+            <p>Llámanos si tienes dudas al teléfono<strong> 0180003653.</strong><br />
+                o al Número: <strong>3217464630.</strong></p>
         </div>
-    </div>
-    <div class="box__footer">
-        <h2>soluciones</h2>
-        <a href="">buenos productos</a>
-        <a href="">calidad</a>
-        <a href="">buen precio</a>
-        <a href=""></a>
-    </div>
-    <div class="box__footer">
-        <h2>compañia</h2>
-        <a href="">buenos productos</a>
-        <a href="">calidad</a>
-        <a href="">buen precio</a>
-        <a href=""></a>
-    </div>
-    <div class="box__footer">
-        <h2>redes socilaes</h2>
-        <a href="#" class="fa fa-facebook"></a>
-        <a href="">instagram</a>
-        <a href="">buen precio</a>
-        <a href=""></a>
-    </div>
+        <div class="box__footer">
+            <div class="logo">
+                <img src="productos/sena.png" alt="">
+            </div>
+        <div class="sena">
+            <h4>Servicio Nacional de Aprendizaje</h4>
+        </div>
+           
+        </div>
+        <div class="box__footer">
+            <h2>Síguenos</h2>
+            <a href="https://m.facebook.com/login/?locale=es_ES" class="fa fa-facebook"> Facebook</a>
+            <a href="https://www.instagram.com/" class="fa fa-instagram"> Instagram</a>
+            
+          
+            
+            <a href=""></a>
+        </div>
 
 
 
-</div>
+    </div>
+
+    <div class="box__copyright">
+        <hr>
+        <center><p>Todos los derechos reservados 2022
+            <b>SOBE</b></center>
+        
+        </p>
+    </div>
 
 </footer>
--->
 
-<footer id="footer">
+
+<!--<footer id="footer">
    
     <div class="container">
         
@@ -77,12 +92,11 @@
     </div>
 
 </footer>
-
+-->
 
 <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <script src="js/jquery-3.2.1.slim.min.js" type="text/javascript"></script>
 <script type="text/javascript" src="js/popper.min.js"></script>
 <script src="script.js"></script>
-<link rel="stylesheet" href=
-"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />

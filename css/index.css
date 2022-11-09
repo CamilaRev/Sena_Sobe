@@ -57,10 +57,73 @@
     color: rgb(160, 160, 161);
 }
 
-#footer {
+/*#footer {
     background: linear-gradient(90deg, #92d0ed, #51abd1 25%, #E26C4E);
 
 }
+*/
+footer{
+    width: 100%;
+
+    padding:50px 0px;
+    *background-image: url("../productos/ola.svg");
+    *background-size: cover;
+    background: linear-gradient(90deg, #92d0ed, #51abd1 25%, #E26C4E);
+    -webkit-mask-image: url("../productos/ola.svg");
+    mask-image: url("../productos/ola.svg");
+    -webkit-mask-size: cover;
+    mask-size: cover;
+}
+.container_footer{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+max-width: 1800px;
+height: 240px;
+margin:auto;
+margin-top: 100px;
+}
+.box__footer {
+
+    display:flex;
+     flex-direction: column;
+     padding: 10px;
+
+}
+.box__footer .logo img{
+
+    width:100px;
+    height:400 px;
+}
+
+.box__footer{
+
+max-width: 350px;
+margin-top: 20px;
+font-weight: 500;
+color: #272626;
+font-size: 18px;
+}
+.box__footer h2{
+
+    margin-bottom: 30px;
+    color:#080808;
+    font-weight: 800;
+
+}
+.box__footer a{
+margin-top: 10px;
+color: #141414;
+font-weight: 600;
+}
+.box__footer a:hover{
+    opacity: 0.8;
+}
+
+.box__footer a .fa{
+    font-size: 40px;
+}
+
 #nav_inicio {
     background: linear-gradient(90deg, #92d0ed, #51abd1 25%, #E26C4E);
    
@@ -69,7 +132,127 @@
 #footer a {
     color: #e9e7ea;
 }
+.box__copyright{
 
+    max-width: 1200px;
+    margin: auto;
+    padding: 0px 40 px;
+}
+.box__copyright p{
+    margin-top: 20px;
+    color:#2b0ae4;
+
+}
+.box__copyright hr{
+    border: none;
+    height: 1px;
+    background-color: #7a7a7a;
+}
+/* burbuja*/
+.burbuja{
+
+    
+    border-radius: 50%;
+    background: #eb140d;
+    
+    opacity:0.8;
+    position: absolute;
+    bottom: -150;
+   
+    animation: burbujas 3s linear infinite;
+}
+
+.burbuja:nth-child(1){
+    width: 80px;
+    height: 80px;
+    left: 5%;
+    animation-duration: 3s;
+    
+
+}
+.burbuja:nth-child(2){
+    width: 100px;
+    height: 100px;
+    left: 35%;
+    animation-duration: 5s;
+  
+
+}
+.burbuja:nth-child(3){
+    width: 20px;
+    height: 20px;
+    left: 15%;
+    animation-duration: 7s;
+   
+}
+
+.burbuja:nth-child(4){
+    width: 50px;
+    height: 50px;
+    left: 90%;
+    animation-duration: 6s;
+    
+
+}
+.burbuja:nth-child(5){
+    width: 30px;
+    height: 30px;
+    left: 50%;
+    animation-duration: 4s;
+   
+
+}
+.burbuja:nth-child(6){
+    width: 20px;
+    height: 20px;
+    left: 50%;
+    animation-duration: 5s;
+    
+}
+.burbuja:nth-child(7){
+    width: 60px;
+    height: 60px;
+    left: 60%;
+    animation-duration: 6s;
+   
+}
+.burbuja:nth-child(8){
+    width: 10px;
+    height: 10px;
+    left: 80%;
+    animation-duration: 7s;
+   
+}
+.burbuja:nth-child(9){
+    width: 35px;
+    height: 35px;
+    left: 15%;
+    animation-duration: 4s;
+    
+}
+.burbuja:nth-child(10){
+    width: 98px;
+    height: 98px;
+    left: 55%;
+    animation-duration: 5s;
+   
+}
+@keyframes burbujas {
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    30%{
+      transform: translateX(30px);
+    }
+    50%{
+        opacity: 0.4;
+    }
+    100%{
+        bottom: 100vh;
+        opacity: 0;
+    }
+}
 body,
 html,
 span,
@@ -118,7 +301,7 @@ a {
 }
 
 .form-formulario {
-    background: url(imag/ingresusu.jpg)
+    background: url(productos/ingresusu.jpg)
 }
 
 .form-register {
