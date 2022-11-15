@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $sqlinsertar = "INSERT INTO carrito(c_idproductofk, c_nombre, c_marca, c_precio, c_cantidad, c_total, c_idusuariofk) VALUES (?, ?, ?, ?, ?, ?, ?)";
         $ejecutarinsertar = $pdo->prepare($sqlinsertar);
         $ejecutarinsertar->execute(array($idproducto, $nombre, $marca, $precio, $cantidad, $total, $idcliente));
-        $sqlactualizar = "UPDATE producto SET p_stock = ? WHERE p_id = ?";
+        $sqlactualizar = "UPDATE producto SET stock = ? WHERE p_id = ?";
         $ejecutaractualizar = $pdo->prepare($sqlactualizar);
         $ejecutaractualizar->execute(array($disponible, $idproducto));
         Conexion::desconectar();
@@ -55,28 +55,28 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <div class="card-body">
                     <div class="row">
 <?php
-$producto = 'SELECT * FROM producto WHERE  (p_nombre LIKE "%'.$datobuscar.'%" OR p_marca LIKE "%'.$datobuscar.'%") ORDER BY p_id DESC;';
+$producto = 'SELECT * FROM producto WHERE  (nombre LIKE "%'.$datobuscar.'%" OR marca LIKE "%'.$datobuscar.'%") ORDER BY p_id DESC;';
 foreach ($pdo->query($producto) as $dato) {
     ?>
                             <div class="col">
                                 <div class="card" style="width: 18rem;">
-                                    <img src="http://localhost/<?php echo $dato['p_foto'] ?>"  class="card-img-top" alt="...">
+                                    <img src="imagenes/<?php echo $dato['imagen_Img'] ?>"  class="card-img-top" alt="...">
                                     <div class="card-body">
 
                                         <form  ROLE="FORM" METHOD="POST" ACTION="">
-                                            <center><h5 class="card-title"><?php echo $dato['p_nombre'] ?></h5></center>
-                                            <p class="card-text">Marca: <strong><?php echo $dato['p_marca'] ?></strong></p>
-                                            <p class="card-text">Valor: $ <strong><?php echo $dato['p_precio'] ?></strong> COP</p>
-                                            <p class="card-text">Disponible: <strong><?php echo $dato['p_stock'] ?></strong></p>
+                                            <center><h5 class="card-title"><?php echo $dato['nombre'] ?></h5></center>
+                                            <p class="card-text">Marca: <strong><?php echo $dato['marca'] ?></strong></p>
+                                            <p class="card-text">Valor: $ <strong><?php echo $dato['precio'] ?></strong> COP</p>
+                                            <p class="card-text">Disponible: <strong><?php echo $dato['stock'] ?></strong></p>
 
                                             <div class="mb-3">
                                                 <input type="number" class="form-control" id="cantidad" name="cantidad"  placeholder="Ingresar Cantidad" min="1" pattern="^[0-9]+" required>
                                             </div>
                                             <input type="hidden" class="form-control" id="idproducto" name="idproducto"  value="<?php echo!empty($dato['p_id']) ? $dato['p_id'] : ''; ?>" required>
-                                            <input type="hidden" class="form-control" id="nombre" name="nombre" value="<?php echo!empty($dato['p_nombre']) ? $dato['p_nombre'] : ''; ?>" required>
-                                            <input type="hidden" class="form-control" id="marca" name="marca"  value="<?php echo!empty($dato['p_marca']) ? $dato['p_marca'] : ''; ?>" required>
-                                            <input type="hidden" class="form-control" id="precio" name="precio"  value="<?php echo!empty($dato['p_precio']) ? $dato['p_precio'] : ''; ?>" required>
-                                            <input type="hidden" class="form-control" id="stock" name="stock" value="<?php echo!empty($dato['p_stock']) ? $dato['p_stock'] : ''; ?>" required>
+                                            <input type="hidden" class="form-control" id="nombre" name="nombre" value="<?php echo!empty($dato['nombre']) ? $dato['nombre'] : ''; ?>" required>
+                                            <input type="hidden" class="form-control" id="marca" name="marca"  value="<?php echo!empty($dato['marca']) ? $dato['marca'] : ''; ?>" required>
+                                            <input type="hidden" class="form-control" id="precio" name="precio"  value="<?php echo!empty($dato['precio']) ? $dato['precio'] : ''; ?>" required>
+                                            <input type="hidden" class="form-control" id="stock" name="stock" value="<?php echo!empty($dato['stock']) ? $dato['stock'] : ''; ?>" required>
                                             <input type="hidden" class="form-control" id="idcliente" name="idcliente"  value="<?php echo $idadmin; ?>" required>
                                             <center> <button type="submit" class="btn btn-primary btn-sm">Añadir Carrito</button></center>
                                         </form>

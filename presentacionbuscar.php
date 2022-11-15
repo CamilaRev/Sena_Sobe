@@ -25,19 +25,19 @@ $datobuscar = $_GET['dato'];
                 <div class="card-body">
                     <div class="row">
 <?php
-$producto = 'SELECT * FROM producto WHERE  (p_nombre LIKE "%'.$datobuscar.'%" OR p_marca LIKE "%'.$datobuscar.'%") ORDER BY p_id DESC;';
+$producto = 'SELECT * FROM producto WHERE  (nombre LIKE "%'.$datobuscar.'%" OR marca LIKE "%'.$datobuscar.'%") ORDER BY p_id DESC;';
 foreach ($pdo->query($producto) as $dato) {
     ?>
                             <div class="col">
                                 <div class="card" style="width: 18rem;">
-                                    <img src="http://localhost/<?php echo $dato['p_foto'] ?>"  class="card-img-top" alt="...">
+                                    <img src="imagenes/<?php echo $dato['imagen_Img'] ?>"  class="card-img-top" alt="...">
                                     <div class="card-body">
 
                                         <form  ROLE="FORM" METHOD="POST" ACTION="">
-                                            <center><h5 class="card-title"><?php echo $dato['p_nombre'] ?></h5></center>
-                                            <p class="card-text">Marca: <strong><?php echo $dato['p_marca'] ?></strong></p>
-                                            <p class="card-text">Valor: $ <strong><?php echo $dato['p_precio'] ?></strong> COP</p>
-                                            <p class="card-text">Disponible: <strong><?php echo $dato['p_stock'] ?></strong></p>
+                                            <center><h5 class="card-title"><?php echo $dato['nombre'] ?></h5></center>
+                                            <p class="card-text">Marca: <strong><?php echo $dato['marca'] ?></strong></p>
+                                            <p class="card-text">Valor: $ <strong><?php echo $dato['precio'] ?></strong> COP</p>
+                                            <p class="card-text">Disponible: <strong><?php echo $dato['stock'] ?></strong></p>
                                         </form>
 
                                     </div>

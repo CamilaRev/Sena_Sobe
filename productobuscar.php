@@ -148,18 +148,18 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     </thead>
                     <tbody>
                         <?php
-                        $producto = 'SELECT * FROM producto WHERE (p_codigo LIKE "%'.$datobuscar.'%" OR p_nombre LIKE "%'.$datobuscar.'%") ORDER BY p_id DESC;';
+                        $producto = 'SELECT * FROM producto WHERE (codigo LIKE "%'.$datobuscar.'%" OR nombre LIKE "%'.$datobuscar.'%") ORDER BY p_id DESC;';
                         foreach ($pdo->query($producto) as $dato) {
                             ?>
                             <tr>
-                                <th scope="row"><?php echo $dato['p_codigo'] ?></th>
-                                <td><?php echo $dato['p_nombre'] ?></td>
-                                <td><?php echo $dato['p_categoria'] ?></td>
-                                <td><?php echo $dato['p_marca'] ?></td>
-                                <td><?php echo $dato['p_precio'] ?></td>
-                                <td><?php echo $dato['p_stock'] ?></td>
-                                <td><center><img src="http://localhost/<?php echo $dato['p_foto'] ?>" class="card-img"  alt="..." style="width: 20%; height: 20%;"></center></td>
-                        <td><?php echo $dato['p_fecha_vencimiento'] ?></td>
+                                <th scope="row"><?php echo $dato['codigo'] ?></th>
+                                <td><?php echo $dato['nombre'] ?></td>
+                                <td><?php echo $dato['categoria'] ?></td>
+                                <td><?php echo $dato['marca'] ?></td>
+                                <td><?php echo $dato['precio'] ?></td>
+                                <td><?php echo $dato['stock'] ?></td>
+                                <td><center><img src="imagenes/<?php echo $dato['imagen_Img'] ?>" class="card-img"  alt="..." style="width: 20%; height: 20%;"></center></td>
+                        <td><?php echo $dato['fecha'] ?></td>
 
 
 
@@ -219,7 +219,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                                         <div class="mb-3">
                                                             <label for="exampleInputEmail1" class="form-label">Imagen</label>
                                                             <input type="file" class="form-control" id="imagen" name="imagen">
-                                                            <input type="hidden" class="form-control" id="imagenvieja" name="imagenvieja"  value="<?php echo!empty($dato['p_foto']) ? $dato['p_foto'] : ''; ?>" required>
+                                                            <input type="hidden" class="form-control" id="imagenvieja" name="imagenvieja"  value="<?php echo!empty($dato['imagen_Img']) ? $dato['imagen_Img'] : ''; ?>" required>
                                                         </div>
                                                         <div class="mb-3">
                                                             <label for="exampleInputEmail1" class="form-label">Fecha de vencimiento</label>
@@ -229,7 +229,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                                     </div>
                                                     <div class="col-md-2">
                                                         <div class="card" >
-                                                            <center><img src="http://localhost/<?php echo $dato['p_foto'] ?>" class="card-img" style="width: 100%; height: 100%;" alt="..."></center>
+                                                            <center><img src="imagenes/<?php echo $dato['imagen_Img'] ?>" class="card-img" style="width: 100%; height: 100%;" alt="..."></center>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -263,7 +263,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                             <form  ROLE="FORM" METHOD="POST"  ACTION="">
                                                 <input type="hidden" class="form-control" id="accion" name="accion" value = "3"  />
                                                 <input type="hidden" class="form-control" id="id" name="id" value="<?php echo!empty($dato['p_id']) ? $dato['p_id'] : ''; ?>""  />
-                                                <input type="hidden" class="form-control" id="imageneliminar" name="imageneliminar" value="<?php echo!empty($dato['p_foto']) ? $dato['p_foto'] : ''; ?>""  />
+                                                <input type="hidden" class="form-control" id="imageneliminar" name="imageneliminar" value="<?php echo!empty($dato['imagen_Img']) ? $dato['imagen_Img'] : ''; ?>""  />
 
                                                 <h4>¿Desea eliminar la información de: <?php echo $dato['p_nombre'] ?>?</h4>
                                                 <p>La informacion simpre se eliminara, siempre y cuando no se este utilizando en el carrito de compra</p>

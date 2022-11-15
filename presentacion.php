@@ -35,16 +35,14 @@
                         ?>
                             <div class="col">
                                 <div class="card" style="width: 18rem;">
-                                    <img src="http://localhost/<?php echo $dato['p_foto'] ?>" class="card-img-top" alt="...">
+                                    <img src="imagenes/<?php echo $dato['imagen_Img'] ?>" class="card-img-top" alt="...">
                                     <div class="card-body">
 
                                         <form ROLE="FORM" METHOD="POST" ACTION="">
-                                        <figure class="text-center">
-                                                <h5 class="card-title"><?php echo $dato['p_nombre'] ?></h5>
-                                        </figure>
-                                            <p class="card-text">Marca: <strong><?php echo $dato['p_marca'] ?></strong></p>
-                                            <p class="card-text">Valor: $ <strong><?php echo $dato['p_precio'] ?></strong> COP</p>
-                                            <p class="card-text">Disponible: <strong><?php echo $dato['p_stock'] ?></strong></p>
+                                        <p class="card-text">Nombre: <strong><?php echo $dato['nombre'] ?></strong></p>
+                                            <p class="card-text">Marca: <strong><?php echo $dato['marca'] ?></strong></p>
+                                            <p class="card-text">Valor: $ <strong><?php echo $dato['precio'] ?></strong> COP</p>
+                                            <p class="card-text">Disponible: <strong><?php echo $dato['stock'] ?></strong></p>
                                         </form>
 
                                     </div>
