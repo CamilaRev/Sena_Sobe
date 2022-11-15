@@ -178,24 +178,19 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                                 <label class="input-group-text"
                                                     for="inputGroupSelect01">Categoria</label>
                                                 <select class="form-select" id="categoria" name="categoria">
-                                                <option selected>Seleccione...</option>
-                                                <option value="1">Maquillaje</option>
-                                                <option value="2">Cuidado facial</option>
-                                                <option value="3">Cuidado corporal</option>
-                                                <option value="4">Fragancias</option>
+                                                    <option selected>Seleccione...</option>
+                                                    <option value="Maquillaje">Maquillaje</option>
+                                                    <option value="Productos faciales">Productos faciales</option>
+                                                    <option value="Otro">Otro</option>
                                                 </select>
                                             </div>
                                             <div class="input-group mb-3">
                                                 <label class="input-group-text" for="inputGroupSelect01">Marca</label>
                                                 <select class="form-select" id="marca" name="marca">
-                                                <option selected>Seleccione...</option>
-                                                <option value="1">Bioderma</option>
-                                                <option value="2">Esika</option>
-                                                <option value="3">Sefora</option>
-                                                <option value="4">Avon</option>
-                                                <option value="5">Cyzone</option>
-                                                <option value="6">Victoria secret</option>
-                                                <option value="7">Yambal</option>
+                                                    <option selected>Seleccione...</option>
+                                                    <option value="Avon">Avon</option>
+                                                    <option value="Esika">Esika</option>
+                                                    <option value="Yambal">Yambal</option>
                                                 </select>
                                             </div>
 

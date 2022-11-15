@@ -30,12 +30,7 @@ if(isset($_POST['btn_save_updates']))
 	$tmp_dir = $_FILES['user_image']['tmp_name'];
 	$imgSize = $_FILES['user_image']['size'];
 				
-  $sqlcantidad = "SELECT COUNT(*) FROM producto WHERE codigo = " . $codigo . "";
-$ejecutarcant = $pdo->query($sqlcantidad);
-$cantidad = $ejecutarcant->fetchColumn();
-if ($cantidad != 0) {
-  echo '<script language="javascript">alert("El codigo esta registrado");</script>';
-} else {
+ 
 
       if($imgFile)
       {
@@ -93,7 +88,7 @@ if ($cantidad != 0) {
               
       
 					
-  }	
+  
 }
 ?>
 <!DOCTYPE html>
