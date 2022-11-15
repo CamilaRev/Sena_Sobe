@@ -20,11 +20,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $qp = $pdo->prepare($buscarproducto);
         $qp->execute(array($idproducto));
         $datop = $qp->fetch(PDO::FETCH_ASSOC);
-        $stock = $datop['p_stock'];
+        $stock = $datop['stock'];
 
         $disponible = $stock + $cantidad;
 
-        $sqlactualizar = "UPDATE producto SET p_stock = ? WHERE p_id = ?";
+        $sqlactualizar = "UPDATE producto SET stock = ? WHERE p_id = ?";
         $ejecutaractualizar = $pdo->prepare($sqlactualizar);
         $ejecutaractualizar->execute(array($disponible, $idproducto));
 
