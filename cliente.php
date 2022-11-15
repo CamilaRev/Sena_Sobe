@@ -12,7 +12,7 @@
             <div class="col-4">
                 <center>
                     <div class="card" style="width: 18rem;">
-                        <img src="productos/Logop.PNG" class="card-img-top" alt="...">
+                    <img src="productos/LogoP.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Bienvenido(a)</h5>
                             <p class="card-text"><?php echo $nombresadmin . " " . $apellidosadmin ?></p>
